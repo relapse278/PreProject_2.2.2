@@ -15,7 +15,7 @@
                 <th scope="col">Manufacture Year</th>
             </tr>
         </thead>
-        <tr th:each="car: ${cars}">
+        <tr th:each="car: ${cars}" class="table-dark">
             <td th:text="${car.getBrand()}"/>
             <td th:text="${car.getModel()}"/>
             <td th:text="${car.getManufactureYear()}"/>
