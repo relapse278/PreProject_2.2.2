@@ -14,17 +14,17 @@ public class CalculatorController {
                             Model model) {
         double result = 0.0;
         switch (operator) {
-            case "+":
+            case "add":
                 result = operand1 + operand2;
                 break;
-            case "-":
+            case "subtract":
                 result = operand1 - operand2;
                 break;
-            case "*":
+            case "multiply":
                 result = operand1 * operand2;
                 break;
-            case "/":
-                result = operand1 / operand2;
+            case "divide":
+                result = (double) operand1 / operand2;
                 break;
         }
         model.addAttribute("result", result);
